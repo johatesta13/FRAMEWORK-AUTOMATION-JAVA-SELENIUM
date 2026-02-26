@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<!--
+============================================================
+TESTNG.XML - Configuración de ejecución de tests
+============================================================
+
+CLASE 14 - DATA-DRIVEN TESTING
+
+Este archivo configura TestNG para ejecutar los tests de Cucumber.
+El TestRunner.java extiende AbstractTestNGCucumberTests y es
+la clase que TestNG ejecutará.
+
+PARA EJECUTAR:
+- Desde IntelliJ: Click derecho en testng.xml → Run
+- Desde Maven: mvn test
+============================================================
+-->
+<suite name="SauceDemo Data-Driven Test Suite" verbose="1">
+
+    <test name="Cucumber Tests">
+        <classes>
+            <!-- El TestRunner es la clase que ejecuta Cucumber -->
+            <class name="ar.org.icaro.automatizacion.runner.TestRunner"/>
+        </classes>
+    </test>
+
+</suite>
